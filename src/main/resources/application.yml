@@ -11,8 +11,8 @@ spring:
           username: harshchoudhary56
           password: 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
           search-paths:
-            - user-service/{profile}
-            - gateway-service/{profile}
-            - other-service/{profile}
+            - user_microservice/{profile}
+            - gateway_microservice/{profile}
+            - other_microservice/{profile}
 server:
   port: 8888
