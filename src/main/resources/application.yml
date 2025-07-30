@@ -1,0 +1,18 @@
+spring:
+  application:
+  name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/your-org/config-store
+          default-label: main  # Specify the branch (e.g., main, dev)
+          refresh-rate: 300 # Refresh every 5 minutes
+          username: ${username}
+          password: ${password}
+          search-paths:
+            - user-service/{profile}
+            - gateway-service/{profile}
+            - other-service/{profile}
+server:
+  port: 8888
