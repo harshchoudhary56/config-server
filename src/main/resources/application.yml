@@ -5,11 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/your-org/config-store
-          default-label: main  # Specify the branch (e.g., main, dev)
+          uri: https://github.com/harshchoudhary56/config-store
+          default-label: dev  # Specify the branch (e.g., main, dev)
           refresh-rate: 300 # Refresh every 5 minutes
-          username: ${username}
-          password: ${password}
+          username: harshchoudhary56
+          password: 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
           search-paths:
             - user-service/{profile}
             - gateway-service/{profile}
