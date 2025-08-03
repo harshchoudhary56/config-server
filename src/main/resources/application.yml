@@ -7,12 +7,12 @@ spring:
         git:
           uri: https://github.com/harshchoudhary56/config-store
           default-label: dev  # Specify the branch (e.g., main, dev)
-          refresh-rate: 300 # Refresh every 5 minutes
           username: harshchoudhary56
           password: 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
           search-paths:
             - user_microservice/{profile}
             - gateway_microservice/{profile}
-            - other_microservice/{profile}
+  profiles:
+    active: dev
 server:
   port: 8888
