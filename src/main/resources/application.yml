@@ -1,6 +1,6 @@
 spring:
   application:
-  name: config-server
+    name: CONFIG-SERVER
   cloud:
     config:
       server:
@@ -12,6 +12,7 @@ spring:
           password: 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
           search-paths:
             - user_microservice
-            - gateway_microservice
+            - gateway
+            - service_registry
 server:
   port: 8888
