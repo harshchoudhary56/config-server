@@ -9,7 +9,7 @@ spring:
           default-label: master  # Specify the branch (e.g., main, dev)
           clone-on-start: true
           username: harshchoudhary56
-          password: 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
+          password: ${GITHUB_TOKEN}
           search-paths:
             - user_microservice
             - gateway
