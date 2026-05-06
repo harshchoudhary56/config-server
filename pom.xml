@@ -21,6 +21,7 @@
         <spring-cloud.version>2025.0.0</spring-cloud.version>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
+        <platform.common.version>0.0.1-SNAPSHOT</platform.common.version>
     </properties>
 
     <dependencyManagement>
@@ -46,6 +47,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apple.inc</groupId>
+            <artifactId>platform.common</artifactId>
+            <version>${platform.common.version}</version>
+        </dependency>
 	</dependencies>
 
     <distributionManagement>

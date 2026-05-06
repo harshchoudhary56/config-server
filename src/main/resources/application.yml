@@ -15,5 +15,21 @@ spring:
             - user_microservice
             - gateway
             - service_registry
+    bus:
+      id: ${spring.application.name}-${server.port}
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,env,health,busrefresh
+  endpoint:
+    health:
+      show-details: always
