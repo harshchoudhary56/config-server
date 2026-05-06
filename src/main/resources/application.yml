@@ -10,7 +10,7 @@ spring:
           clone-on-start: true
           username: harshchoudhary56
           password: ${GITHUB_TOKEN}
-          refresh-rate: 30000  # Refresh every 30 seconds
+          refresh-rate: 0  # Refresh when new request comes does not server form local
           search-paths:
             - user_microservice
             - gateway
