@@ -17,6 +17,7 @@ spring:
             - service_registry
     bus:
       id: ${spring.application.name}-${server.port}
+      enabled: true
   rabbitmq:
     host: localhost
     port: 5672

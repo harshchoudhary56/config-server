@@ -16,6 +16,6 @@ public class GatewayEventPublisher {
     private final ApplicationEventPublisher publisher;
 
     public void publish(String msg) {
-        publisher.publishEvent(new GatewayConfigRefreshEvent(this, busId, "*", msg));
+        publisher.publishEvent(new GatewayConfigRefreshEvent(this, busId, "API-GATEWAY:**", msg));
     }
 }
