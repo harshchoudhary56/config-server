@@ -18,6 +18,10 @@ spring:
     bus:
       id: ${spring.application.name}-${server.port}
       enabled: true
+    stream:
+      bindings:
+        springCloudBusInput:
+          group: config-server
   rabbitmq:
     host: localhost
     port: 5672
